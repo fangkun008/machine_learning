@@ -46,18 +46,15 @@ def simulate(startdate, enddate, symbols, allocations):
 	print "Cumulative Return:", na_port_total[-1]
 
 
-print sys.argv
+#print sys.argv
 
 if __name__ == '__main__':
 	print "Program name", sys.argv[0]
-
-startdate = sys.argv[1]
-enddate = sys.argv[2]
-symbols = sys.argv[3]
-allocations = sys.argv[4]
-
-
-simulate(startdate,enddate,symbols,allocations)
+	startdate = sys.argv[1]
+	enddate = sys.argv[2]
+	symbols = sys.argv[3]
+	allocations = sys.argv[4]
+	simulate(startdate,enddate,symbols,allocations)
 
 
 
